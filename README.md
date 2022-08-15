@@ -15,4 +15,4 @@ FreeBox has its own license, known as the FBFE OSS License (FreeBoxForEveryone).
 Info can be found in LICENSE.
 
 ## Compiling
-run ```make```.
+run ```./Compile```.
