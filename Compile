@@ -1,0 +1,24 @@
+#!/bin/sh
+echo "Building FreeCat"
+cd src/cat
+cargo build --release
+sudo cp target/release/cat /usr/bin/freecat
+cd ../
+echo "Building FreeLS"
+cd ls
+cargo build --release
+sudo cp target/release/ls /usr/bin/freels
+cd ../
+echo "Building Malae"
+cd malae
+cargo build --release
+sudo cp target/release/malae /usr/bin/malae
+cd ../
+echo "Building FreeBLK"
+cd lsblk
+cargo build --release
+sudo cp target/release/lsblk /usr/bin/freeblk
+cd ~
+echo "All tasks completed and were installed to: /usr/bin/freecat, /usr/bin/freels, /usr/bin/malae, /usr/bin/freeblk"
+
+
