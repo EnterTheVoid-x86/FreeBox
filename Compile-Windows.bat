@@ -16,5 +16,5 @@ cd ..\
 echo "Building FreeBLK"
 cd lsblk
 cargo build --release
-copy target\release\freeblk.exe C:\Windows\System32\
+copy target\release\lsblk.exe C:\Windows\System32\
 echo "All tasks completed and were installed to: /usr/bin/freecat, /usr/bin/freels, /usr/bin/malae, /usr/bin/freeblk"
